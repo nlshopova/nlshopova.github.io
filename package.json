@@ -1,0 +1,19 @@
+{
+  "name": "nlshopova-portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website of Nikolina Shopova",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlshopova/nlshopova.github.io.git"
+  },
+  "author": "Nikolina Shopova",
+  "license": "MIT",
+  "homepage": "https://nlshopova.github.io",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

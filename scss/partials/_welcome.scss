@@ -1,0 +1,28 @@
+.welcome {
+  background: linear-gradient(
+      to bottom right,
+      rgba($blue, 0.95),
+      rgba($pink, 0.95)
+    ),
+    url("../img/welcome.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  color: $light-pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  hgroup {
+    text-align: center;
+  }
+  h1 {
+    color: $light-pink;
+    font-size: 7rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}

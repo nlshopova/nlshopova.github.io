@@ -1,0 +1,23 @@
+.about {
+  background-color: $blue;
+  color: $light-pink;
+
+  h1 {
+    color: $light-pink;
+    &::after {
+      background: rgba($light-pink, 0.5);
+    }
+  }
+  .info-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 4rem;
+
+    .profile-pic {
+      justify-self: end;
+      img {
+        border-radius: 100%;
+      }
+    }
+  }
+}

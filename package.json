@@ -2,7 +2,7 @@
   "name": "nlshopova-portfolio-website",
   "version": "1.0.0",
   "description": "Personal portfolio website of Nikolina Shopova",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },

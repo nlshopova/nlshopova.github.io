@@ -1,0 +1,16 @@
+.site-header {
+  background: $dark-blue;
+  padding: 2rem 4rem;
+  display: flex;
+  flex: 1 0 0;
+
+  .logo {
+    width: 90px;
+  }
+
+  .main-nav {
+    li {
+      display: inline-block;
+    }
+  }
+}

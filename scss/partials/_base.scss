@@ -9,7 +9,12 @@ body {
 a {
   text-decoration: none;
   color: $teal;
-  font-weight: bold;
+}
+.btn {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: $light-pink;
 }
 img {
   max-width: 100%;

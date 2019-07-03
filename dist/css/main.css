@@ -307,8 +307,13 @@ body {
 
 a {
   text-decoration: none;
-  color: #82d6c9;
-  font-weight: bold; }
+  color: #82d6c9; }
+
+.btn {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background: #fff7fc; }
 
 img {
   max-width: 100%; }
@@ -347,6 +352,16 @@ h2 {
   width: 1170px;
   margin: 0 auto; }
 
+.site-header {
+  background: #00072d;
+  padding: 2rem 4rem;
+  display: flex;
+  flex: 1 0 0; }
+  .site-header .logo {
+    width: 90px; }
+  .site-header .main-nav li {
+    display: inline-block; }
+
 .welcome {
   background: linear-gradient(to bottom right, rgba(59, 69, 172, 0.95), rgba(195, 86, 187, 0.95)), url("../img/welcome.jpg");
   background-size: cover;
@@ -377,7 +392,25 @@ h2 {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 4rem; }
+    .about .info-container .info {
+      display: flex;
+      flex-direction: column; }
     .about .info-container .profile-pic {
       justify-self: end; }
       .about .info-container .profile-pic img {
         border-radius: 100%; }
+  .about .btn-download {
+    background-color: #82d6c9;
+    color: #fff7fc;
+    align-self: flex-start;
+    margin-top: auto;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem; }
+    .about .btn-download:before {
+      content: url("../img/icons/download.svg");
+      height: 1.5em;
+      width: 2em;
+      margin-right: 0.85em;
+      display: inline-block;
+      vertical-align: middle; }

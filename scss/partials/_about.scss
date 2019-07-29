@@ -9,16 +9,22 @@
     }
   }
   .info-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: 4rem;
-
+    // display: grid;
+    // grid-template-columns: 3fr 1fr;
+    // grid-column-gap: 4rem;
+    @include tablet {
+      display: flex;
+    }
     .info {
       display: flex;
       flex-direction: column;
     }
     .profile-pic {
-      justify-self: end;
+      width: 70%;
+      margin: 0 auto;
+      @include tablet {
+        order: 1;
+      }
       img {
         border-radius: 100%;
       }

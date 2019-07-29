@@ -302,8 +302,10 @@ body {
   font-family: "Muli", sans-serif;
   line-height: 1.6;
   background: #fff7fc;
-  font-size: 1.125rem;
   overflow-x: hidden; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.125rem; } }
 
 a {
   text-decoration: none;
@@ -332,11 +334,14 @@ h1 {
 
 h2 {
   font-family: "BioRhyme", serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400; }
 
 .main-section {
-  padding: 80px 0px; }
+  padding: 1.5rem 0; }
+  @media (min-width: 768px) {
+    .main-section {
+      padding: 3rem 0; } }
   .main-section h1 {
     text-align: center;
     text-transform: uppercase; }
@@ -349,8 +354,9 @@ h2 {
       margin: 0.2em auto 0; }
 
 .container {
-  width: 1170px;
-  margin: 0 auto; }
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px; }
 
 .site-header {
   background: #00072d;
@@ -375,11 +381,15 @@ h2 {
     text-align: center; }
   .welcome h1 {
     color: #fff7fc;
-    font-size: 7rem;
     margin: 0; }
+    @media (min-width: 768px) {
+      .welcome h1 {
+        font-size: 6rem; } }
   .welcome h2 {
-    font-size: 2.5rem;
     margin: 0; }
+    @media (min-width: 768px) {
+      .welcome h2 {
+        font-size: 2.5rem; } }
 
 .about {
   background-color: #3b45ac;
@@ -388,17 +398,20 @@ h2 {
     color: #fff7fc; }
     .about h1::after {
       background: rgba(255, 247, 252, 0.5); }
-  .about .info-container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: 4rem; }
-    .about .info-container .info {
-      display: flex;
-      flex-direction: column; }
-    .about .info-container .profile-pic {
-      justify-self: end; }
-      .about .info-container .profile-pic img {
-        border-radius: 100%; }
+  @media (min-width: 768px) {
+    .about .info-container {
+      display: flex; } }
+  .about .info-container .info {
+    display: flex;
+    flex-direction: column; }
+  .about .info-container .profile-pic {
+    width: 70%;
+    margin: 0 auto; }
+    @media (min-width: 768px) {
+      .about .info-container .profile-pic {
+        order: 1; } }
+    .about .info-container .profile-pic img {
+      border-radius: 100%; }
   .about .btn-download {
     background-color: #82d6c9;
     color: #fff7fc;
@@ -414,3 +427,52 @@ h2 {
       margin-right: 0.85em;
       display: inline-block;
       vertical-align: middle; }
+
+.main-section.contact {
+  background: #f2f3ff; }
+  .main-section.contact .email {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3rem; }
+
+.btn-email {
+  background-color: #c356bb;
+  color: #fff7fc;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem; }
+  @media (min-width: 768px) {
+    .btn-email {
+      font-size: 1rem; } }
+  .btn-email:before {
+    content: url("../img/icons/email.svg");
+    height: 1.5em;
+    width: 2em;
+    display: inline-block;
+    vertical-align: middle; }
+
+.social-links {
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 768px) {
+    .social-links {
+      width: 50%;
+      margin: 0 auto; } }
+  .social-links a {
+    border: 5px solid #c356bb;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .social-links .social-icon {
+    width: 50%; }
+
+footer {
+  background: #00072d;
+  color: #fff7fc;
+  text-align: center;
+  font-size: 0.8125rem;
+  padding: 1em; }

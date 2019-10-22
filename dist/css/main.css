@@ -329,12 +329,12 @@ p {
 h1 {
   color: #3b45ac;
   font-family: "Jockey One", sans-serif;
-  font-size: 3.125rem;
+  font-size: 2rem;
   font-weight: 400; }
 
 h2 {
   font-family: "BioRhyme", serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400; }
 
 .main-section {
@@ -342,31 +342,37 @@ h2 {
   @media (min-width: 768px) {
     .main-section {
       padding: 3rem 0; } }
-  .main-section h1 {
-    text-align: center;
-    text-transform: uppercase; }
-    .main-section h1::after {
-      content: "";
-      width: 10%;
-      height: 1px;
-      background: rgba(59, 69, 172, 0.5);
-      display: block;
-      margin: 0.2em auto 0; }
+  .main-section header {
+    text-align: center; }
 
 .container {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px; }
 
+.section-heading {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase; }
+  .section-heading::after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background: rgba(59, 69, 172, 0.5);
+    display: block;
+    margin: 0.2em auto 0; }
+
 .site-header {
   background: #00072d;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   flex: 1 0 0; }
   .site-header .logo {
-    width: 90px; }
-  .site-header .main-nav li {
-    display: inline-block; }
+    width: 60px; }
+  .site-header .main-nav {
+    margin-left: auto; }
+    .site-header .main-nav li {
+      display: inline-block; }
 
 .welcome {
   background: linear-gradient(to bottom right, rgba(59, 69, 172, 0.95), rgba(195, 86, 187, 0.95)), url("../img/welcome.jpg");
@@ -376,57 +382,125 @@ h2 {
   color: #fff7fc;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 2rem; }
   .welcome hgroup {
     text-align: center; }
   .welcome h1 {
     color: #fff7fc;
-    margin: 0; }
+    margin-bottom: 2rem;
+    font-size: 3rem; }
     @media (min-width: 768px) {
       .welcome h1 {
         font-size: 6rem; } }
   .welcome h2 {
-    margin: 0; }
+    margin: 0;
+    font-size: 1.5rem; }
     @media (min-width: 768px) {
       .welcome h2 {
         font-size: 2.5rem; } }
 
-.about {
+.main-section.about {
   background-color: #3b45ac;
   color: #fff7fc; }
-  .about h1 {
+  .main-section.about .section-heading {
     color: #fff7fc; }
-    .about h1::after {
+    .main-section.about .section-heading::after {
       background: rgba(255, 247, 252, 0.5); }
-  @media (min-width: 768px) {
-    .about .info-container {
-      display: flex; } }
-  .about .info-container .info {
-    display: flex;
-    flex-direction: column; }
-  .about .info-container .profile-pic {
-    width: 70%;
-    margin: 0 auto; }
+  .main-section.about .info-container {
+    margin-bottom: 2rem;
+    text-align: center; }
     @media (min-width: 768px) {
-      .about .info-container .profile-pic {
-        order: 1; } }
-    .about .info-container .profile-pic img {
-      border-radius: 100%; }
-  .about .btn-download {
+      .main-section.about .info-container {
+        display: flex;
+        text-align: left; } }
+    @media (min-width: 1024px) {
+      .main-section.about .info-container {
+        align-items: center; } }
+    .main-section.about .info-container .info {
+      display: flex;
+      flex-direction: column; }
+      @media (min-width: 768px) {
+        .main-section.about .info-container .info {
+          max-width: 70%;
+          margin-right: 2rem; } }
+    .main-section.about .info-container .profile-pic {
+      width: 50%;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        .main-section.about .info-container .profile-pic {
+          order: 1; } }
+      .main-section.about .info-container .profile-pic img {
+        border-radius: 100%; }
+  .main-section.about .btn-download {
     background-color: #82d6c9;
     color: #fff7fc;
     align-self: flex-start;
-    margin-top: auto;
+    margin: 1rem auto;
     font-size: 1rem;
     padding: 0.75rem 1.25rem;
     border-radius: 2rem; }
-    .about .btn-download:before {
+    @media (min-width: 768px) {
+      .main-section.about .btn-download {
+        margin: 1rem 0; } }
+    .main-section.about .btn-download:before {
       content: url("../img/icons/download.svg");
       height: 1.5em;
       width: 2em;
       margin-right: 0.85em;
       display: inline-block;
       vertical-align: middle; }
+
+.hobbies-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .hobbies-list figure {
+    margin: 0;
+    padding: 1.25em;
+    text-align: center;
+    width: calc(50% - 2.5em); }
+    @media (min-width: 768px) {
+      .hobbies-list figure {
+        width: calc(33.3% - 2.5em); } }
+    @media (min-width: 1024px) {
+      .hobbies-list figure {
+        width: calc(16.6% - 2.5em); } }
+    .hobbies-list figure img {
+      width: 90%; }
+
+.main-section.projects {
+  background: #fff7fc; }
+  .main-section.projects .section-heading {
+    color: #c356bb; }
+    .main-section.projects .section-heading::after {
+      background: rgba(195, 86, 187, 0.5); }
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border: 1px solid salmon; }
+  @media (min-width: 768px) {
+    .project-item {
+      width: calc(50% - 4rem - 4px); } }
+  @media (min-width: 1024px) {
+    .project-item {
+      width: calc(33% - 4rem - 6px); } }
+
+.project-info {
+  background: linear-gradient(to bottom right, rgba(59, 69, 172, 0.7), rgba(195, 86, 187, 0.7));
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem; }
+
+.project-links {
+  margin-top: auto; }
 
 .main-section.contact {
   background: #f2f3ff; }
@@ -454,6 +528,7 @@ h2 {
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
   @media (min-width: 768px) {
     .social-links {

@@ -1,14 +1,15 @@
 .site-header {
   background: $dark-blue;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   flex: 1 0 0;
 
   .logo {
-    width: 90px;
+    width: 60px;
   }
 
   .main-nav {
+    margin-left: auto;
     li {
       display: inline-block;
     }

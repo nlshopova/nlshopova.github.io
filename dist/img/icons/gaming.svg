@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="95" height="95" viewBox="0 0 95 95">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="95" height="95" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_3" data-name="Mask Group 3" clip-path="url(#clip-path)">
+    <g id="if_gamecontroller_1055053">
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="47.5" cy="47.5" r="47.5" fill="#82d6c9"/>
+      <path id="Path_70" data-name="Path 70" d="M53.828,72.883c13.656,0,14.176,4.529,19.3,9.058s14.844,6.031,14.844-9.058-6.828-24.155-6.828-24.155S74.609,37.557,65.7,46.292a17.442,17.442,0,0,1-23.75,0c-8.906-8.736-15.438,2.437-15.438,2.437s-6.828,9.065-6.828,24.154,9.723,13.588,14.844,9.058S40.172,72.883,53.828,72.883Z" transform="translate(-6.328 -13.807)" fill="#fff" opacity="0.2"/>
+      <path id="Path_71" data-name="Path 71" d="M53.828,66.321c13.656,0,14.176,4.529,19.3,9.058s14.844,6.031,14.844-9.058-6.828-24.155-6.828-24.155S74.609,30.994,65.7,39.73a17.442,17.442,0,0,1-23.75,0c-8.906-8.736-15.438,2.437-15.438,2.437s-6.828,9.065-6.828,24.154,9.723,13.588,14.844,9.058S40.172,66.321,53.828,66.321Z" transform="translate(-6.328 -11.697)" fill="#fff"/>
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="2.969" cy="2.969" r="2.969" transform="translate(62.344 47.5)" fill="#82d6c9"/>
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="2.969" cy="2.969" r="2.969" transform="translate(68.281 40.078)" fill="#82d6c9"/>
+      <path id="Path_72" data-name="Path 72" d="M39.453,71.672a2.231,2.231,0,0,1-2.227,2.234h0A2.231,2.231,0,0,1,35,71.672V61.3a2.231,2.231,0,0,1,2.227-2.233h0A2.231,2.231,0,0,1,39.453,61.3Z" transform="translate(-11.25 -18.984)" fill="#82d6c9"/>
+      <path id="Path_73" data-name="Path 73" d="M29.578,71.172a2.231,2.231,0,0,1-2.234-2.227h0a2.231,2.231,0,0,1,2.234-2.227H39.955a2.231,2.231,0,0,1,2.234,2.227h0a2.231,2.231,0,0,1-2.234,2.227Z" transform="translate(-8.789 -21.445)" fill="#82d6c9"/>
+    </g>
+  </g>
+</svg>

@@ -1,11 +1,6 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-// @mixin tablet {
-//   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-//     @content;
-//   }
-// }
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
@@ -14,5 +9,12 @@ $desktop-width: 1024px;
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
     @content;
+  }
+}
+
+@mixin section-heading($color) {
+  color: $color;
+  &::after {
+    background: rgba($color, 0.5);
   }
 }

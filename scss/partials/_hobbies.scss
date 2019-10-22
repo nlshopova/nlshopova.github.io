@@ -1,0 +1,21 @@
+.hobbies-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  figure {
+    margin: 0;
+    padding: 1.25em;
+    text-align: center;
+    width: calc(50% - 2.5em);
+    @include tablet {
+      width: calc(33.3% - 2.5em);
+    }
+    @include desktop {
+      width: calc(16.6% - 2.5em);
+    }
+    img {
+      width: 90%;
+    }
+  }
+}

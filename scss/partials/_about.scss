@@ -1,26 +1,35 @@
-.about {
+.main-section.about {
   background-color: $blue;
   color: $light-pink;
 
-  h1 {
-    color: $light-pink;
-    &::after {
-      background: rgba($light-pink, 0.5);
-    }
+  .section-heading {
+    @include section-heading($light-pink);
   }
   .info-container {
     // display: grid;
     // grid-template-columns: 3fr 1fr;
     // grid-column-gap: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
     @include tablet {
       display: flex;
+      text-align: left;
+    }
+    @include desktop {
+      align-items: center;
     }
     .info {
       display: flex;
       flex-direction: column;
+
+      @include tablet {
+        max-width: 70%;
+        margin-right: 2rem;
+      }
     }
     .profile-pic {
-      width: 70%;
+      width: 50%;
       margin: 0 auto;
       @include tablet {
         order: 1;
@@ -35,10 +44,14 @@
     background-color: $teal;
     color: $light-pink;
     align-self: flex-start;
-    margin-top: auto;
+    margin: 1rem auto;
     font-size: 1rem;
     padding: 0.75rem 1.25rem;
     border-radius: 2rem;
+
+    @include tablet {
+      margin: 1rem 0;
+    }
 
     &:before {
       content: url("../img/icons/download.svg");

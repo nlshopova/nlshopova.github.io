@@ -35,13 +35,13 @@ h1 {
   color: $blue;
   // line-height: 1;
   font-family: $f-ss;
-  font-size: 3.125rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h2 {
   font-family: $f-s;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 .main-section {
@@ -50,22 +50,27 @@ h2 {
     padding: 3rem 0;
   }
 
-  h1 {
+  header {
     text-align: center;
-    text-transform: uppercase;
-
-    &::after {
-      content: "";
-      width: 10%;
-      height: 1px;
-      background: rgba($blue, 0.5);
-      display: block;
-      margin: 0.2em auto 0;
-    }
   }
 }
+
 .container {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
+}
+.section-heading {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    width: 60%;
+    height: 1px;
+    background: rgba($blue, 0.5);
+    display: block;
+    margin: 0.2em auto 0;
+  }
 }

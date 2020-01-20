@@ -23,10 +23,13 @@
         <p></p>
       </div>
     </div>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
       <div class="logo">
         <img src="/dist/img/NLS.png" alt="Nikolina Shopova logo image" />
       </div>
+      <button class="menu-button">
+        <img src="dist/img/icons/menu-button.svg" alt="menu button icon" />
+      </button>
       <nav class="main-nav">
         <ul>
           <li><a href="#about">About</a></li>
@@ -62,7 +65,9 @@
             </p>
             <a
               download="NLShopova-Resume.pdf"
-              href="https://www.dropbox.com/s/yn113s7iw12wi6f/NLShopova-Resume.pdf?dl=1"
+              target="_blank"
+              href="
+              https://www.dropbox.com/s/bfvbun37cplk0z8/NLShopova-Resume.pdf?dl=0"
               class="btn btn-download"
               >Download CV</a
             >
@@ -120,49 +125,63 @@
               </section>
       </div>
     </section>
-    <section class="main-section projects">
+    <section class="main-section projects" id="projects">
       <div class="container">
         <header>
           <h1 class="section-heading">Projects</h1>
         </header>
         <div class="projects-list">
           <figure class="project-item">
-            <img class="project-image" src="/dist/img/project.jpg" alt="project image">
+                <img class="project-image" src="/dist/img/projects/plesa-fitness.png" alt="Plesa Fitness logo" />
             <figcaption class="project-info">
-              <h2 class="project-title">Project Name</h2>
-              <p class="project-desc">A short description</p>
+              <h2 class="project-title">Plesa Fitness</h2>
+              <p class="project-desc">Design and development for a personal trainer website.</p>
               <div class="project-links">
-                <a href="#" class="project-link">Visit website</a>
-                <a href="#" class="project-link">GitHub repo</a>
+                <a href="https://plesafitness.com/" class="project-link" title="Visit website"><img src="/dist/img/icons/link-website.svg" alt="link icon" /></a>
               </div>
             </figcaption>
           </figure>
           <figure class="project-item">
-            <img class="project-image" src="/dist/img/project.jpg" alt="project image">
+            <img class="project-image" src="/dist/img/projects/lunch-list.jpg" alt="lunch list image">
             <figcaption class="project-info">
-              <h2 class="project-title">Project Name</h2>
-              <p class="project-desc">A short description could go right here</p>
+              <h2 class="project-title">Lunch list</h2>
+              <p class="project-desc">Disign and development of a customized lunch list with like reactions</p>
               <div class="project-links">
-                <a href="#" class="project-link">Visit website</a>
-                <a href="#" class="project-link">GitHub repo</a>
+                <a href="https://github.com/nlshopova/lunch-list" class="project-link" title="Check Github repo"><img src="/dist/img/icons/link-code.svg" alt="code icon" /></a>
               </div>
             </figcaption>
           </figure>
           <figure class="project-item">
-            <img class="project-image" src="/dist/img/project.jpg" alt="project image">
-            <figcaption class="project-info">
-              <h2 class="project-title">Project Name</h2>
-              <p class="project-desc">A short description could go right here</p>
-              <div class="project-links">
-                <a href="#" class="project-link">Visit website</a>
-                <a href="#" class="project-link">GitHub repo</a>
-              </div>
-            </figcaption>
-          </figure>
+              <img class="project-image" src="/dist/img/projects/capdesk-testimonials.jpg" alt="capdesk testimonials image" />
+              <figcaption class="project-info">
+                <h2 class="project-title">Testimonials page</h2>
+                <p class="project-desc">Testimonials listing page and view page for Capdesk</p>
+                <div class="project-links">
+                  <a href="https://www.capdesk.com/customer-stories" class="project-link" title="Visit website"><img src="/dist/img/icons/link-website.svg" alt="link icon" /></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="project-item">
+              <img class="project-image" src="/dist/img/projects/capdesk-blog.jpg" alt="capdesk testimonials image" />
+              <figcaption class="project-info">
+                <h2 class="project-title">Capdesk blog</h2>
+                <p class="project-desc">A custom Hubspot blog for Capdesk</p>
+                <div class="project-links">
+                  <a href="https://blog.capdesk.com/" class="project-link" title="Visit website"><img src="/dist/img/icons/link-website.svg" alt="link icon" /></a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="project-item">
+              <img class="project-image" src="/dist/img/projects/project.jpg" alt="project image" />
+              <figcaption class="project-info">
+                <h2 class="project-title">Punk beer web app</h2>
+                <p class="project-desc">Coming soon...</p>
+              </figcaption>
+            </figure>
         </div>
       </div>
     </section>
-    <section class="main-section contact">
+    <section class="main-section contact" id="contact">
       <div class="container">
         <header>
           <h1 class="section-heading">Contact me</h1>
@@ -204,6 +223,10 @@
     <footer>
       &copy; 2019 Nikolina Shopova. All rights reserved.
     </footer>
-    <script src=""></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="dist/js/script.js"></script>
   </body>
 </html>

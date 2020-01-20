@@ -1,17 +1,65 @@
 .site-header {
   background: $dark-blue;
-  padding: 1rem 4rem;
+  padding: 1rem;
   display: flex;
   flex: 1 0 0;
+  flex-wrap: wrap;
+  // height: 4rem;
+  position: sticky;
+  top: 0;
 
-  .logo {
-    width: 60px;
+  .logo img {
+    height: 3rem;
+  }
+
+  .menu-button {
+    background: transparent;
+    border: none;
+    margin-left: auto;
+    @include tablet {
+      display: none;
+    }
+
+    &:active,
+    &:hover {
+      outline: none;
+    }
   }
 
   .main-nav {
-    margin-left: auto;
+    flex-basis: 100%;
+    @include tablet {
+      flex-basis: auto;
+      margin-left: auto;
+    }
+
+    ul {
+      display: none;
+      padding: 0;
+      margin: 0;
+
+      &.nav-open {
+        display: block;
+      }
+
+      @include tablet {
+        display: block;
+      }
+    }
     li {
-      display: inline-block;
+      display: block;
+      @include tablet {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+    }
+    a {
+      text-align: center;
+      display: block;
+      padding: 0.5rem 0;
+    }
+    .active a {
+      color: $light-pink;
     }
   }
 }

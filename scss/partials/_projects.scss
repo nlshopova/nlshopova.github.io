@@ -12,8 +12,7 @@
 .project-item {
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  border: 1px solid salmon;
+  margin: 1rem;
   @include tablet {
     width: calc(50% - 4rem - 4px);
   }
@@ -21,17 +20,26 @@
     width: calc(33% - 4rem - 6px);
   }
 }
+.project-image {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
 .project-info {
-  background: linear-gradient(
-    to bottom right,
-    rgba($blue, 0.7),
-    rgba($pink, 0.7)
-  );
+  background: linear-gradient(to top left, rgba($blue, 0.7), rgba($pink, 0.7));
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 1rem;
+  color: $light-pink;
+}
+.project-title {
+  color: $blue;
 }
 .project-links {
   margin-top: auto;
+
+  img {
+    height: 1.2rem;
+  }
 }
